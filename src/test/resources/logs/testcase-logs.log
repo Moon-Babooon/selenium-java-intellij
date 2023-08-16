@@ -74,3 +74,45 @@
 21:23:20.495 [main] INFO  base.Logging - ----------------------------------------
 --------Testcases are finished
 
+23:42:46.813 [main] INFO  base.Logging - Testcase login has started successfuly
+23:42:49.357 [main] INFO  base.Logging - Testcase login has passed
+23:42:53.438 [main] INFO  base.Logging - Testcase topMenuTest has started successfuly
+23:42:58.006 [main] INFO  base.Logging - Testcase topMenuTest has passed
+23:43:01.971 [main] INFO  base.Logging - Testcase searchTest has started successfuly
+23:43:08.235 [main] FATAL base.Logging - ERROR! Testcase searchTest has FAILED
+23:43:08.237 [main] FATAL base.Logging - ERROR! Testcase searchTest has FAILED
+23:43:10.470 [main] INFO  base.Logging - -- Testcases are finished -- 
+ 
+00:42:48.085 [main] INFO  base.Logging - Testcase login has started successfuly
+00:42:50.542 [main] INFO  base.Logging - Testcase login has passed
+00:42:54.398 [main] INFO  base.Logging - Testcase topMenuTest has started successfuly
+00:42:59.862 [main] INFO  base.Logging - Testcase topMenuTest has passed
+00:43:04.102 [main] INFO  base.Logging - Testcase searchTest has started successfuly
+00:43:08.897 [main] INFO  base.Logging - Testcase searchTest has passed
+00:43:13.097 [main] INFO  base.Logging - Testcase filterTest has started successfuly
+00:43:36.668 [main] INFO  base.Logging - Testcase filterTest has passed
+00:43:38.997 [main] INFO  base.Logging - -- Testcases are finished -- 
+ 
+00:46:06.005 [main] INFO  base.Logging - Testcase login has started successfuly
+00:46:08.276 [main] INFO  base.Logging - Testcase login has passed
+00:46:12.311 [main] INFO  base.Logging - Testcase topMenuTest has started successfuly
+00:46:17.043 [main] INFO  base.Logging - Testcase topMenuTest has passed
+00:46:21.065 [main] INFO  base.Logging - Testcase searchTest has started successfuly
+00:46:26.169 [main] INFO  base.Logging - Testcase searchTest has passed
+00:46:30.242 [main] INFO  base.Logging - Testcase filterTest has started successfuly
+00:46:54.052 [main] INFO  base.Logging - Testcase filterTest has passed
+00:46:56.308 [main] INFO  base.Logging - -- Testcases are finished -- 
+ 
+00:48:28.618 [main] INFO  base.Logging - Testcase login has started successfuly
+00:48:31.062 [main] INFO  base.Logging - Testcase login has passed
+00:48:35.181 [main] INFO  base.Logging - Testcase topMenuTest has started successfuly
+00:48:40.796 [main] INFO  base.Logging - Testcase topMenuTest has passed
+00:48:44.763 [main] INFO  base.Logging - Testcase searchTest has started successfuly
+00:48:49.666 [main] INFO  base.Logging - Testcase searchTest has passed
+00:48:54.165 [main] INFO  base.Logging - Testcase filterTest has started successfuly
+00:49:17.839 [main] INFO  base.Logging - Testcase filterTest has passed
+00:49:21.920 [main] INFO  base.Logging - Testcase footerTest has started successfuly
+00:49:32.857 [main] FATAL base.Logging - ERROR! Testcase footerTest has FAILED
+00:49:32.990 [main] INFO  base.Logging - Screenshot has been captured
+00:49:35.238 [main] INFO  base.Logging - -- Testcases are finished -- 
+ 

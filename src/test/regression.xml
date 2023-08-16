@@ -10,6 +10,7 @@
             <class name="testcase.MenuTest"/>
             <class name="testcase.SearchTest"/>
             <class name="testcase.FilterTest"/>
+            <class name="testcase.FooterTest"></class>
         </classes>
     </test> <!-- MenuFunctionality -->
 </suite> <!-- RegressionSuite -->
