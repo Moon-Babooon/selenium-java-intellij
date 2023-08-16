@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+    <test thread-count="5" name="MenuFunctionality">
+        <classes>
+            <class name="testcase.LoginTest"/>
+            <class name="testcase.MenuTest"/>
+            <class name="testcase.SearchTest"/>
+            <class name="testcase.FilterTest"/>
+        </classes>
+    </test> <!-- MenuFunctionality -->
+</suite> <!-- RegressionSuite -->
