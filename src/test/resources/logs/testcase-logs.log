@@ -1,0 +1,76 @@
+
+21:05:55.653 [main] INFO  base.Logging - Test login has started successfuly
+21:05:58.061 [main] INFO  base.Logging - Testcase login has finished successfuly
+21:06:02.045 [main] INFO  base.Logging - Test topMenuTest has started successfuly
+21:06:06.184 [main] INFO  base.Logging - Testcase topMenuTest has finished successfuly
+21:06:10.180 [main] INFO  base.Logging - Test searchTest has started successfuly
+21:06:15.130 [main] INFO  base.Logging - Testcase searchTest has finished successfuly
+21:06:19.025 [main] INFO  base.Logging - Test filterTest has started successfuly
+21:06:21.244 [main] FATAL base.Logging - ERROR! Test filterTest has FAILED
+21:09:33.693 [main] INFO  base.Logging - Testcase login has started successfuly
+21:09:36.231 [main] INFO  base.Logging - Testcase login has passed
+21:09:40.096 [main] INFO  base.Logging - Testcase topMenuTest has started successfuly
+21:09:44.549 [main] INFO  base.Logging - Testcase topMenuTest has passed
+21:09:48.342 [main] INFO  base.Logging - Testcase searchTest has started successfuly
+21:09:53.156 [main] INFO  base.Logging - Testcase searchTest has passed
+21:09:57.095 [main] INFO  base.Logging - Testcase filterTest has started successfuly
+21:09:59.299 [main] FATAL base.Logging - ERROR! Testcase filterTest has FAILED
+21:10:31.370 [main] INFO  base.Logging - Testcase login has started successfuly
+21:10:33.484 [main] INFO  base.Logging - Testcase login has passed
+21:10:37.375 [main] INFO  base.Logging - Testcase topMenuTest has started successfuly
+21:10:41.740 [main] INFO  base.Logging - Testcase topMenuTest has passed
+21:10:45.725 [main] INFO  base.Logging - Testcase searchTest has started successfuly
+21:10:50.768 [main] FATAL base.Logging - ERROR! Testcase searchTest has FAILED
+21:10:54.734 [main] INFO  base.Logging - Testcase filterTest has started successfuly
+21:11:03.713 [main] FATAL base.Logging - ERROR! Testcase filterTest has FAILED
+21:12:53.620 [main] INFO  base.Logging - Testcase login has started successfuly
+21:12:55.943 [main] INFO  base.Logging - Testcase login has passed
+21:12:59.927 [main] INFO  base.Logging - Testcase topMenuTest has started successfuly
+21:13:04.207 [main] INFO  base.Logging - Testcase topMenuTest has passed
+21:13:08.085 [main] INFO  base.Logging - Testcase searchTest has started successfuly
+21:13:13.099 [main] INFO  base.Logging - Testcase searchTest has passed
+21:13:17.085 [main] INFO  base.Logging - Testcase filterTest has started successfuly
+21:13:25.779 [main] FATAL base.Logging - ERROR! Testcase filterTest has FAILED
+21:17:59.391 [main] INFO  base.Logging - Testcase login has started successfuly
+21:18:01.718 [main] INFO  base.Logging - Testcase login has passed
+21:18:05.674 [main] INFO  base.Logging - Testcase topMenuTest has started successfuly
+21:18:10.155 [main] INFO  base.Logging - Testcase topMenuTest has passed
+21:18:14.310 [main] INFO  base.Logging - Testcase searchTest has started successfuly
+21:18:18.917 [main] INFO  base.Logging - Testcase searchTest has passed
+21:18:22.779 [main] INFO  base.Logging - Testcase filterTest has started successfuly
+21:18:31.871 [main] FATAL base.Logging - ERROR! Testcase filterTest has FAILED
+21:18:34.091 [main] INFO  base.Logging - -------------------------------------------------------------------
+
+21:19:52.176 [main] INFO  base.Logging - Testcase login has started successfuly
+21:19:54.410 [main] INFO  base.Logging - Testcase login has passed
+21:19:58.257 [main] INFO  base.Logging - Testcase topMenuTest has started successfuly
+21:20:03.005 [main] INFO  base.Logging - Testcase topMenuTest has passed
+21:20:07.168 [main] INFO  base.Logging - Testcase searchTest has started successfuly
+21:20:11.852 [main] INFO  base.Logging - Testcase searchTest has passed
+21:20:15.659 [main] INFO  base.Logging - Testcase filterTest has started successfuly
+21:20:24.618 [main] FATAL base.Logging - ERROR! Testcase filterTest has FAILED
+21:20:26.864 [main] INFO  base.Logging - Testcases are finished
+
+21:20:26.864 [main] INFO  base.Logging - -------------------------------------------------------------------
+
+21:20:57.215 [main] INFO  base.Logging - Testcase login has started successfuly
+21:20:59.759 [main] INFO  base.Logging - Testcase login has passed
+21:21:03.643 [main] INFO  base.Logging - Testcase topMenuTest has started successfuly
+21:21:08.115 [main] INFO  base.Logging - Testcase topMenuTest has passed
+21:21:12.130 [main] INFO  base.Logging - Testcase searchTest has started successfuly
+21:21:14.339 [main] FATAL base.Logging - ERROR! Testcase searchTest has FAILED
+21:21:18.227 [main] INFO  base.Logging - Testcase filterTest has started successfuly
+21:21:27.570 [main] FATAL base.Logging - ERROR! Testcase filterTest has FAILED
+21:21:29.810 [main] INFO  base.Logging - Testcases are finished
+
+21:22:40.274 [main] INFO  base.Logging - Testcase login has started successfuly
+21:22:42.580 [main] INFO  base.Logging - Testcase login has passed
+21:22:46.644 [main] INFO  base.Logging - Testcase topMenuTest has started successfuly
+21:22:50.913 [main] INFO  base.Logging - Testcase topMenuTest has passed
+21:22:54.827 [main] INFO  base.Logging - Testcase searchTest has started successfuly
+21:23:05.090 [main] FATAL base.Logging - ERROR! Testcase searchTest has FAILED
+21:23:09.057 [main] INFO  base.Logging - Testcase filterTest has started successfuly
+21:23:18.257 [main] FATAL base.Logging - ERROR! Testcase filterTest has FAILED
+21:23:20.495 [main] INFO  base.Logging - ----------------------------------------
+--------Testcases are finished
+

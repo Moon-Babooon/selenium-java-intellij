@@ -1,6 +1,8 @@
 package testcase;
 
 import base.Browser;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -17,9 +19,12 @@ public class FooterTest extends Browser {
     public String actual;
     public String expected;
     public JavascriptExecutor js;
+    public Logger log;
 
     @Test
     public void footerTest() throws IOException {
+
+        log = LogManager.getLogger(FilterTest.class);
 
         f = new FileReader(
                 System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\footer-locators.properties");
