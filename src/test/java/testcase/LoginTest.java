@@ -2,13 +2,8 @@ package testcase;
 
 import base.Browser;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
 
 import java.io.FileReader;
@@ -25,8 +20,9 @@ public class LoginTest extends Browser {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        driver.navigate().to(p.getProperty("url")+"/login");
         driver.manage().window().maximize();
+
+        driver.navigate().to(p.getProperty("url")+"/login");
 
         WebElement emailBtn = driver.findElement(By.xpath(p.getProperty("email-btn")));
         emailBtn.click();

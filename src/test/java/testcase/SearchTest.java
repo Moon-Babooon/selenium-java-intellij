@@ -55,7 +55,6 @@ public class SearchTest extends Browser {
 
         WebElement search = driver.findElement(By.xpath(p.getProperty("search-btn")));
         search.click();
-
     }
 
 }

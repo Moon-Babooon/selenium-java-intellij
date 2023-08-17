@@ -1,23 +1,14 @@
 package base;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Date;
 
 public class Listeners extends Logging implements ITestListener  {
 
     public void onTestStart(ITestResult result) {
 
         String testname = result.getName();
-
         loggingInfo("Testcase "+testname+" has started successfuly");
 
     }
@@ -26,6 +17,13 @@ public class Listeners extends Logging implements ITestListener  {
 
         String testname = result.getName();
         loggingInfo("Testcase "+testname+" has passed");
+
+    }
+
+    public void onTestSkipped(ITestResult result) {
+
+        String testname = result.getName();
+        loggingInfo("Testcase "+testname+" was SKIPPED");
 
     }
 

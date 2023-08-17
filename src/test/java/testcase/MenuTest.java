@@ -3,6 +3,7 @@ package testcase;
 import base.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -13,12 +14,11 @@ import java.time.Duration;
 public class MenuTest extends Browser {
 
     @Test
-    public static void topMenuTest() throws IOException, IOException {
+    public void topMenuTest() throws IOException, IOException {
 
         f = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\menu-locators.properties");
         p.load(f);
 
-        System.out.println("Top Menu Test: ");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
 
@@ -155,5 +155,6 @@ public class MenuTest extends Browser {
         soft.assertEquals(actualTowersTxt, expectedTowersTxt);
         soft.assertAll();
         towers.click();
+
     }
 }

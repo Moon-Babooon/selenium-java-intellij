@@ -1,10 +1,7 @@
 package testcase;
 
 import base.Browser;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -23,7 +20,7 @@ public class FilterTest extends Browser {
     public WebElement scroll;
 
     @Test
-    public void filterTest() throws IOException, IOException {
+    public void filterTest() throws IOException {
 
         f = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\filter-locators.properties");
         p.load(f);
@@ -40,6 +37,7 @@ public class FilterTest extends Browser {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
+
         WebElement filter = driver.findElement(By.xpath(p.getProperty("filter-btn")));
         fwait.until(ExpectedConditions.elementToBeClickable(filter));
         filter.click();
@@ -218,6 +216,7 @@ public class FilterTest extends Browser {
             }
             WebElement confirm = driver.findElement(By.xpath(p.getProperty("confirm")));
             confirm.click();
+
         }
     }
 

@@ -5,15 +5,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.testng.annotations.AfterSuite;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
 public class Logging extends Browser{
 
-    private Logger log = LogManager.getLogger(Logging.class);;
+    private final Logger log = LogManager.getLogger(Logging.class);
 
     protected void loggingInfo(String s) {
 
@@ -32,6 +30,7 @@ public class Logging extends Browser{
         log.error(s);
 
     }
+
     // Screenshot
     protected void getScreenshot(String testname) {
 

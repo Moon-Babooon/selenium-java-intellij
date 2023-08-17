@@ -34,6 +34,7 @@ public class FooterTest extends Browser {
                 .pollingEvery(Duration.ofSeconds(2)).ignoring(NoSuchElementException.class);
 
         driver.manage().window().maximize();
+
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         js = (JavascriptExecutor) driver;
@@ -137,6 +138,7 @@ public class FooterTest extends Browser {
         twitter.isDisplayed();
         WebElement instagram = driver.findElement(By.xpath(p.getProperty("instagram")));
         instagram.isDisplayed();
+
 
     }
 
