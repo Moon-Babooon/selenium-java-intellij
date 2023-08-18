@@ -8,7 +8,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -20,7 +19,6 @@ public class Browser {
     public static FileReader f;
     public static Properties p = new Properties();
 
-    @Parameters({"browser"})
     @BeforeClass
     protected static void browserSetup() throws IOException {
 
