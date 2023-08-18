@@ -1,9 +1,8 @@
-package testcase;
+package testcase.airbnb;
 
 import base.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -14,7 +13,7 @@ import java.time.Duration;
 public class MenuTest extends Browser {
 
     @Test
-    public void topMenuTest() throws IOException, IOException {
+    public void topMenuTest() throws IOException {
 
         f = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\menu-locators.properties");
         p.load(f);

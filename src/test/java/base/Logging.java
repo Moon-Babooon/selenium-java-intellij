@@ -35,12 +35,12 @@ public class Logging extends Browser{
     protected void getScreenshot(String testname) {
 
         Date date = new Date();
-        String textDate = date.toString().replace(" ", "-").replace(":", "-");
-        String screenshotName = testname+"--"+textDate;
+        String textDate = date.toString().replace(" ", "_").replace(":", "-");
+        String screenshotName = testname+"-FAILED-"+p.getProperty("browser")+"--"+textDate;
 
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(screenshot, new File("./src/test/screenshots/"+screenshotName+".png"));
+            FileUtils.copyFile(screenshot, new File("./src/test/screenshots/"+p.getProperty("browser")+"/"+screenshotName+".png"));
             loggingInfo("Screenshot has been captured");
         } catch (IOException e) {
             throw new RuntimeException(e);

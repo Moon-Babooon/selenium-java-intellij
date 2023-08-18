@@ -9,28 +9,28 @@ public class Listeners extends Logging implements ITestListener  {
     public void onTestStart(ITestResult result) {
 
         String testname = result.getName();
-        loggingInfo("Testcase "+testname+" has started successfuly");
+        loggingInfo(" | "+p.getProperty("browser")+" | "+"Testcase "+testname+" has started successfuly");
 
     }
 
     public void onTestSuccess(ITestResult result) {
 
         String testname = result.getName();
-        loggingInfo("Testcase "+testname+" has passed");
+        loggingInfo(" | "+p.getProperty("browser")+" | "+"Testcase "+testname+" has passed");
 
     }
 
     public void onTestSkipped(ITestResult result) {
 
         String testname = result.getName();
-        loggingInfo("Testcase "+testname+" was SKIPPED");
+        loggingInfo(" | "+p.getProperty("browser")+" | "+"Testcase "+testname+" was SKIPPED");
 
     }
 
     public void onTestFailure(ITestResult result) {
 
         String testname = result.getName();
-        loggingFatal("ERROR! Testcase "+testname+" has FAILED");
+        loggingFatal(" | "+p.getProperty("browser")+" | "+"ERROR! Testcase "+testname+" has FAILED");
 
         getScreenshot(testname);
 

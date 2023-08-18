@@ -6,11 +6,11 @@
     </listeners>
     <test thread-count="5" name="MenuFunctionality">
         <classes>
-            <class name="testcase.LoginTest"/>
-            <class name="testcase.MenuTest"/>
-            <class name="testcase.SearchTest"/>
-            <class name="testcase.FilterTest"/>
-            <class name="testcase.FooterTest"></class>
+            <class name="testcase.airbnb.LoginTest"/>
+            <class name="testcase.airbnb.MenuTest"/>
+            <class name="testcase.airbnb.SearchTest"/>
+            <class name="testcase.airbnb.FilterTest"/>
+            <class name="testcase.airbnb.FooterTest"></class>
         </classes>
     </test> <!-- MenuFunctionality -->
 </suite> <!-- RegressionSuite -->

@@ -1,4 +1,4 @@
-package testcase;
+package testcase.airbnb;
 
 import base.Browser;
 import org.openqa.selenium.*;

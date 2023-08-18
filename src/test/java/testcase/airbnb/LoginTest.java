@@ -1,9 +1,8 @@
-package testcase;
+package testcase.airbnb;
 
 import base.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
 
 import java.io.FileReader;

@@ -1,4 +1,4 @@
-package testcase;
+package testcase.airbnb;
 
 import base.Browser;
 import org.apache.logging.log4j.LogManager;
@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;

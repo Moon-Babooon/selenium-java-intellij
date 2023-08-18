@@ -7,10 +7,10 @@
 
         <RollingFile name="File"
                      fileName="${filename}/testcase-logs.log"
-                     filePattern="${filename}/testcase-%d{HH:mm:ss.SSS}"
+                     filePattern="${filename}/testcase-%d{HH:mm}"
                      append="true">
             <PatternLayout>
-                <pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
+                <pattern>%d{HH:mm:ss:SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
             </PatternLayout>
             <SizeBasedTriggeringPolicy size="500" />
         </RollingFile>

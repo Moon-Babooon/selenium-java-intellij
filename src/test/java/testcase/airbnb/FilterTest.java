@@ -1,4 +1,4 @@
-package testcase;
+package testcase.airbnb;
 
 import base.Browser;
 import org.openqa.selenium.*;
@@ -32,7 +32,7 @@ public class FilterTest extends Browser {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        Wait<WebDriver> fwait = new FluentWait<WebDriver>(driver)
+        Wait<WebDriver> fwait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(20)).pollingEvery(Duration.ofSeconds(2));
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -48,7 +48,7 @@ public class FilterTest extends Browser {
         soft.assertEquals(actual, expected);
         soft.assertAll();
         WebElement minslider = driver.findElement(By.xpath(p.getProperty("min-slider")));
-        action.dragAndDropBy(minslider, 100, 0).perform();;
+        action.dragAndDropBy(minslider, 100, 0).perform();
         WebElement maxslider = driver.findElement(By.xpath(p.getProperty("max-slider")));
         action.dragAndDropBy(maxslider, -150, 0).perform();
         WebElement minprice = driver.findElement(By.xpath(p.getProperty("min-price")));
@@ -67,7 +67,7 @@ public class FilterTest extends Browser {
         WebElement anybathbtn = driver.findElement(By.xpath(p.getProperty("bath-btn-any")));
 
         action.scrollToElement(anybedrommsbtn).perform();
-        action.moveToElement(anybedrommsbtn).perform();;
+        action.moveToElement(anybedrommsbtn).perform();
         action.moveByOffset(80, 0).click().perform();
         action.moveByOffset(70, 0).click().perform();
         action.moveByOffset(70, 0).click().perform();
@@ -79,7 +79,7 @@ public class FilterTest extends Browser {
         anybedrommsbtn.click();
 
         action.scrollToElement(anybedsbtn).perform();
-        action.moveToElement(anybedsbtn).perform();;
+        action.moveToElement(anybedsbtn).perform();
         action.moveByOffset(80, 0).click().perform();
         action.moveByOffset(70, 0).click().perform();
         action.moveByOffset(70, 0).click().perform();
@@ -90,7 +90,7 @@ public class FilterTest extends Browser {
         action.moveByOffset(70, 0).click().perform();
         anybedsbtn.click();
 
-        action.moveToElement(anybathbtn).perform();;
+        action.moveToElement(anybathbtn).perform();
         action.moveByOffset(80, 0).click().perform();
         action.moveByOffset(70, 0).click().perform();
         action.moveByOffset(70, 0).click().perform();
