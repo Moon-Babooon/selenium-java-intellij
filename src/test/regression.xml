@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="RegressionSuite">
     <listeners>
-        <listener class-name="base.Listeners"></listener>
+        <listener class-name="base.Listeners"/>
     </listeners>
     <test thread-count="5" name="MenuFunctionality">
         <classes>
@@ -10,7 +10,7 @@
             <class name="testcase.airbnb.MenuTest"/>
             <class name="testcase.airbnb.SearchTest"/>
             <class name="testcase.airbnb.FilterTest"/>
-            <class name="testcase.airbnb.FooterTest"></class>
+            <class name="testcase.airbnb.FooterTest"/>
         </classes>
     </test> <!-- MenuFunctionality -->
 </suite> <!-- RegressionSuite -->

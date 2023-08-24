@@ -57,3 +57,32 @@
 16:01:47:555 [main] INFO  base.Logging - Screenshot has been captured
 16:01:49:784 [main] INFO  base.Logging - -- Testcases are finished -- 
  
+21:41:49.849 [main] INFO  base.Logging -  | chrome | Testcase login has started successfuly
+21:41:52.685 [main] INFO  base.Logging -  | chrome | Testcase login has passed
+21:41:56.718 [main] INFO  base.Logging -  | chrome | Testcase topMenuTest has started successfuly
+21:42:01.302 [main] INFO  base.Logging -  | chrome | Testcase topMenuTest has passed
+21:42:05.475 [main] INFO  base.Logging -  | chrome | Testcase searchTest has started successfuly
+21:42:10.363 [main] INFO  base.Logging -  | chrome | Testcase searchTest has passed
+21:42:14.577 [main] INFO  base.Logging -  | chrome | Testcase filterTest has started successfuly
+21:42:23.687 [main] FATAL base.Logging -  | chrome | ERROR! Testcase filterTest has FAILED
+21:42:24.081 [main] INFO  base.Logging - Screenshot has been captured
+21:42:28.064 [main] INFO  base.Logging -  | chrome | Testcase footerTest has started successfuly
+21:42:38.859 [main] FATAL base.Logging -  | chrome | ERROR! Testcase footerTest has FAILED
+21:42:39.397 [main] INFO  base.Logging - Screenshot has been captured
+21:42:41.596 [main] INFO  base.Logging - -- Testcases are finished -- 
+ 
+18:20:04.857 [main] INFO  base.Logging -  | null | Testsuite MenuFunctionality has started execution!
+18:20:09.466 [main] INFO  base.Logging -  | chrome | Testcase login has started successfuly
+18:20:12.487 [main] INFO  base.Logging -  | chrome | Testcase login has passed
+18:20:16.532 [main] INFO  base.Logging -  | chrome | Testcase topMenuTest has started successfuly
+18:20:20.562 [main] INFO  base.Logging -  | chrome | Testcase topMenuTest has passed
+18:20:24.685 [main] INFO  base.Logging -  | chrome | Testcase searchTest has started successfuly
+18:20:29.476 [main] INFO  base.Logging -  | chrome | Testcase searchTest has passed
+18:20:33.664 [main] INFO  base.Logging -  | chrome | Testcase filterTest has started successfuly
+18:20:42.513 [main] FATAL base.Logging -  | chrome | ERROR! Testcase filterTest has FAILED
+18:20:42.908 [main] INFO  base.Logging - Screenshot has been captured
+18:20:46.998 [main] INFO  base.Logging -  | chrome | Testcase footerTest has started successfuly
+18:20:57.738 [main] FATAL base.Logging -  | chrome | ERROR! Testcase footerTest has FAILED
+18:20:58.306 [main] INFO  base.Logging - Screenshot has been captured
+18:21:00.563 [main] INFO  base.Logging - -- Testsuite is finished -- 
+ 

@@ -6,6 +6,11 @@ import org.testng.ITestResult;
 
 public class Listeners extends Logging implements ITestListener  {
 
+    public void onStart(ITestContext context) {
+        String contextName = context.getName();
+        loggingInfo(" | "+p.getProperty("browser")+" | "+"Testsuite "+contextName+" has started execution!");
+    }
+
     public void onTestStart(ITestResult result) {
 
         String testname = result.getName();
@@ -36,9 +41,8 @@ public class Listeners extends Logging implements ITestListener  {
 
     }
 
-    public void onFinish(ITestContext contextFinish) {
-
-        loggingInfo("-- Testcases are finished -- "+"\n"+" ");
+    public void onFinish(ITestContext context) {
+        loggingInfo("-- Testsuite is finished -- "+"\n"+" ");
     }
 
 }
