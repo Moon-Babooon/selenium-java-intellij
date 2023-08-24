@@ -20,7 +20,7 @@ public class Browser {
     public static Properties p = new Properties();
 
     @BeforeClass
-    protected static void browserSetup() throws IOException {
+    private static void browserSetup() throws IOException {
 
         if (driver==null) {
             f = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configs\\configs.properties");
@@ -53,18 +53,24 @@ public class Browser {
             driver.get(p.getProperty("url"));
         }
     }
-
-    @AfterClass
-    protected static void browserTearDown() {
+    private static void browserTearDown() {
 
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
         driver.quit();
+    }
 
+    @BeforeClass
+    public static void browserExecution() throws IOException {
+        Browser.browserSetup();
+    }
+
+    @AfterClass
+    public static void browserClosure() {
+        Browser.browserTearDown();
     }
 
 }

@@ -86,3 +86,18 @@
 18:20:58.306 [main] INFO  base.Logging - Screenshot has been captured
 18:21:00.563 [main] INFO  base.Logging - -- Testsuite is finished -- 
  
+18:37:42.352 [main] INFO  base.Logging -  | null | Testsuite MenuFunctionality has started execution!
+18:37:45.417 [main] INFO  base.Logging -  | chrome | Testcase login has started successfuly
+18:37:48.059 [main] INFO  base.Logging -  | chrome | Testcase login has passed
+18:37:52.590 [main] INFO  base.Logging -  | chrome | Testcase topMenuTest has started successfuly
+18:37:57.190 [main] INFO  base.Logging -  | chrome | Testcase topMenuTest has passed
+18:38:01.206 [main] INFO  base.Logging -  | chrome | Testcase searchTest has started successfuly
+18:38:06.093 [main] INFO  base.Logging -  | chrome | Testcase searchTest has passed
+18:38:10.079 [main] INFO  base.Logging -  | chrome | Testcase filterTest has started successfuly
+18:38:18.786 [main] FATAL base.Logging -  | chrome | ERROR! Testcase filterTest has FAILED
+18:38:19.148 [main] INFO  base.Logging - Screenshot has been captured
+18:38:23.318 [main] INFO  base.Logging -  | chrome | Testcase footerTest has started successfuly
+18:38:34.260 [main] FATAL base.Logging -  | chrome | ERROR! Testcase footerTest has FAILED
+18:38:34.801 [main] INFO  base.Logging - Screenshot has been captured
+18:38:37.060 [main] INFO  base.Logging - -- Testsuite is finished -- 
+ 
