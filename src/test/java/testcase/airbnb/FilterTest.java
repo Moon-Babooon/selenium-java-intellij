@@ -18,6 +18,9 @@ public class FilterTest extends Browser {
     public String actual;
     public String expected;
     public WebElement scroll;
+    public Actions action;
+    public SoftAssert soft;
+    public Wait<WebDriver> fwait;
 
     @Test
     public void filterTest() throws IOException {
@@ -25,14 +28,9 @@ public class FilterTest extends Browser {
         f = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\filter-locators.properties");
         p.load(f);
 
-        SoftAssert soft = new SoftAssert();
-        Actions action = new Actions(driver);
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        Wait<WebDriver> fwait = new FluentWait<>(driver)
+        soft = new SoftAssert();
+        action = new Actions(driver);
+        fwait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(20)).pollingEvery(Duration.ofSeconds(2));
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -41,6 +39,20 @@ public class FilterTest extends Browser {
         WebElement filter = driver.findElement(By.xpath(p.getProperty("filter-btn")));
         fwait.until(ExpectedConditions.elementToBeClickable(filter));
         filter.click();
+
+        checkPriceRange();
+        checkRoomsAndBeds();
+        checkPropertyType();
+        checkAmenities();
+        checkBooking();
+        checkAccessibilityFeat();
+        checkTopTierStays();
+        checkHostLang();
+
+    }
+
+    private void checkPriceRange() {
+
         // Price range ---------------------------------------------------------------------------------
         WebElement h1 = driver.findElement(By.xpath(p.getProperty("header1")));
         actual = h1.getText();
@@ -55,6 +67,10 @@ public class FilterTest extends Browser {
         minprice.sendKeys("50");
         WebElement maxprice = driver.findElement(By.xpath(p.getProperty("max-price")));
         maxprice.sendKeys("110");
+
+    }
+
+    private void checkRoomsAndBeds() {
 
         // Rooms and beds ---------------------------------------------------------------------------------
         WebElement h2 = driver.findElement(By.xpath(p.getProperty("header2")));
@@ -101,6 +117,10 @@ public class FilterTest extends Browser {
         action.moveByOffset(70, 0).click().perform();
         anybathbtn.click();
 
+    }
+
+    private void checkPropertyType() {
+
         // Property type ---------------------------------------------------------------------------------
         WebElement h3 = driver.findElement(By.xpath(p.getProperty("header3")));
         action.scrollToElement(h3).perform();
@@ -118,6 +138,10 @@ public class FilterTest extends Browser {
         guesthouse.click();
         WebElement hotel = driver.findElement(By.xpath(p.getProperty("hotel-btn")));
         hotel.click();
+
+    }
+
+    private void checkAmenities() {
 
         // Amenities ---------------------------------------------------------------------------------
         WebElement h4 = driver.findElement(By.xpath(p.getProperty("header4")));
@@ -140,6 +164,10 @@ public class FilterTest extends Browser {
         WebElement heating = driver.findElement(By.xpath(p.getProperty("heat-box")));
         heating.click();
 
+    }
+
+    private void checkBooking(){
+
         // Booking options ---------------------------------------------------------------------------------
         WebElement h5 = driver.findElement(By.xpath(p.getProperty("header5")));
         actual = h5.getText();
@@ -152,6 +180,10 @@ public class FilterTest extends Browser {
         action.click();
         action.moveToElement(driver.findElement(By.xpath(p.getProperty("self-checkin")))).perform();
         action.click();
+
+    }
+
+    private void checkAccessibilityFeat() {
 
         // Accessibility features ---------------------------------------------------------------------------------
         WebElement h6 = driver.findElement(By.xpath(p.getProperty("header6")));
@@ -171,6 +203,10 @@ public class FilterTest extends Browser {
         stepfreepath.click();
         action.scrollByAmount(0, 20).perform();
 
+    }
+
+    private void checkTopTierStays() {
+
         // Top tier stays ---------------------------------------------------------------------------------
         WebElement h7 = driver.findElement(By.xpath(p.getProperty("header7")));
         actual = h7.getText();
@@ -183,6 +219,9 @@ public class FilterTest extends Browser {
         action.moveByOffset(590, 0).perform();
         action.click().perform();
 
+    }
+
+    private void checkHostLang() {
         // Host language ---------------------------------------------------------------------------------
         WebElement h8 = driver.findElement(By.xpath(p.getProperty("header8")));
         actual = h8.getText();
@@ -218,9 +257,10 @@ public class FilterTest extends Browser {
             confirm.click();
 
         }
+
     }
 
-    public void scrollJS(WebElement x) {
+    private void scrollJS(WebElement x) {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(true);", x);

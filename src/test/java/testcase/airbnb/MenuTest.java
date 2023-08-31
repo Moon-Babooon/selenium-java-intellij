@@ -12,11 +12,14 @@ import java.time.Duration;
 
 public class MenuTest extends Browser {
 
+
+
     @Test
     public void topMenuTest() throws IOException {
 
         f = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\menu-locators.properties");
         p.load(f);
+        SoftAssert soft = new SoftAssert();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
@@ -24,7 +27,6 @@ public class MenuTest extends Browser {
         WebElement pools = driver.findElement(By.xpath(p.getProperty("pools-btn")));
         String actualPoolTxt = pools.getText();
         String expectedPoolTxt = "Amazing pools";
-        SoftAssert soft = new SoftAssert();
         soft.assertEquals(actualPoolTxt, expectedPoolTxt);
         soft.assertAll();
         pools.click();
@@ -156,4 +158,5 @@ public class MenuTest extends Browser {
         towers.click();
 
     }
+
 }

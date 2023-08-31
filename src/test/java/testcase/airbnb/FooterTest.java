@@ -1,8 +1,6 @@
 package testcase.airbnb;
 
 import base.Browser;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -18,12 +16,9 @@ public class FooterTest extends Browser {
     public String actual;
     public String expected;
     public JavascriptExecutor js;
-    public Logger log;
 
     @Test
     public void footerTest() throws IOException {
-
-        log = LogManager.getLogger(FilterTest.class);
 
         f = new FileReader(
                 System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\footer-locators.properties");
@@ -47,6 +42,17 @@ public class FooterTest extends Browser {
         soft.assertEquals(actual, expected);
         soft.assertAll();
 
+        checkTopSection();
+        checkSupport();
+        checkHosting();
+        checkAirbnbSection();
+        checkFooterSection();
+        checkSocials();
+
+    }
+
+    private void checkTopSection() {
+
         WebElement popular = driver.findElement(By.xpath(p.getProperty("popular")));
         popular.click();
         WebElement art = driver.findElement(By.xpath(p.getProperty("art")));
@@ -66,6 +72,10 @@ public class FooterTest extends Browser {
         WebElement friendly = driver.findElement(By.xpath(p.getProperty("friendly")));
         friendly.click();
 
+    }
+
+    private void checkSupport() {
+
         // Support ---------------------------------------------------------------------
         WebElement support = driver.findElement(By.xpath(p.getProperty("support")));
         support.isDisplayed();
@@ -81,6 +91,10 @@ public class FooterTest extends Browser {
         cancellation.isDisplayed();
         WebElement neighborhood = driver.findElement(By.xpath(p.getProperty("neighborhood")));
         neighborhood.isDisplayed();
+
+    }
+
+    private void checkHosting() {
 
         // Hosting ----------------------------------------------------------------------
         WebElement hosting = driver.findElement(By.xpath(p.getProperty("hosting")));
@@ -98,6 +112,10 @@ public class FooterTest extends Browser {
         WebElement airbnbfriendly = driver.findElement(By.xpath(p.getProperty("airbnb-friendly")));
         airbnbfriendly.isDisplayed();
 
+    }
+
+    private void checkAirbnbSection() {
+
         // Airbnb ---------------------------------------------------------------------------
         WebElement airbnb = driver.findElement(By.xpath(p.getProperty("airbnb")));
         airbnb.isDisplayed();
@@ -114,8 +132,11 @@ public class FooterTest extends Browser {
         WebElement disasterrelief = driver.findElement(By.xpath(p.getProperty("disaster-relief")));
         disasterrelief.isDisplayed();
 
-        // Footer section -------------------------------------------------------------------
+    }
 
+    private void checkFooterSection() {
+
+        // Footer section -------------------------------------------------------------------
         WebElement terms = driver.findElement(By.xpath(p.getProperty("terms")));
         terms.isDisplayed();
         WebElement sitemap = driver.findElement(By.xpath(p.getProperty("sitemap")));
@@ -130,6 +151,10 @@ public class FooterTest extends Browser {
         WebElement currency = driver.findElement(By.xpath(p.getProperty("currency")));
         currency.isDisplayed();
 
+    }
+
+    private void checkSocials() {
+
         // Socials ----------------------------------------------------------------------------
         WebElement facebook = driver.findElement(By.xpath(p.getProperty("facebook")));
         facebook.isDisplayed();
@@ -137,7 +162,6 @@ public class FooterTest extends Browser {
         twitter.isDisplayed();
         WebElement instagram = driver.findElement(By.xpath(p.getProperty("instagram")));
         instagram.isDisplayed();
-
 
     }
 

@@ -4,7 +4,6 @@ import base.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
@@ -36,7 +35,6 @@ public class LoginTest extends Browser {
 
         WebElement loginBtn = driver.findElement(By.xpath(p.getProperty("login-btn")));
         loginBtn.click();
-
     }
 
 }
